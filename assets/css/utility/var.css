@@ -2,8 +2,11 @@
   --bg: #faf6ed;
   --bg-secundary: #fb5;
   --primary-color: #222;
+  --secondary-color:#e54 ;
   --padding-l1: 10px;
   --grid-display: grid;
+  --font1: 'IBM Plex Mono', monospace;
+  --font2: Helvetica, Arial;
 }
 
 .cor-p1 {

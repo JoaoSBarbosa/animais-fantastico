@@ -17,14 +17,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Bootstrap icons-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <!--Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -45,8 +47,8 @@
       </nav>
     </header>
     <section class="grid-section animais" id="animais">
-      <h1 class="titlle">Animais Fantástico</h1>
-      <ul>
+      <h1 class="titulo">Animais Fantástico</h1>
+      <ul class="animais-lista">
         <li>
           <img src="assets/img/imagem1.jpg" alt="Raposa vermelha" />
         </li>
@@ -220,9 +222,10 @@
         </section>
       </div>
     </section>
+
     <section class="grid-section faq" id="faq">
-      <h1>FAQ</h1>
-      <dl>
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista">
         <dt>Qual a idade dos animais</dt>
         <dd>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magni
@@ -237,42 +240,41 @@
           eaque architecto doloribus dolore magnam, sit nulla porro! Neque,
           obcaecati cum!
         </dd>
-      </dl>
 
-      <dt>Qual a diferença ?</dt>
-      <dd>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga
-        natus officia necessitatibus ipsa, accusamus eius aspernatur, vel est
-        eaque architecto doloribus dolore magnam, sit nulla porro! Neque,
-        obcaecati cum!
-      </dd>
-      <dt>Como proteger ?</dt>
-      <dd>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga
-        natus officia necessitatibus ipsa, accusamus eius aspernatur, vel est
-        eaque architecto doloribus dolore magnam, sit nulla porro! Neque,
-        obcaecati cum!
-      </dd>
+        <dt>Qual a diferença ?</dt>
+        <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga
+          natus officia necessitatibus ipsa, accusamus eius aspernatur, vel est
+          eaque architecto doloribus dolore magnam, sit nulla porro! Neque,
+          obcaecati cum!
+        </dd>
+        <dt>Como proteger ?</dt>
+        <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga
+          natus officia necessitatibus ipsa, accusamus eius aspernatur, vel est
+          eaque architecto doloribus dolore magnam, sit nulla porro! Neque,
+          obcaecati cum!
+        </dd>
+      </dl>
     </section>
     <section class="grid-section contato" id="contato">
-      <h1>Contato</h1>
+      <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="assets/img/mapa.png" alt="Mapa da localização" />
       </div>
       <ul class="dados">
         <li>
-          <a href="mailto:contato.jsbarbosa@gmail.com"
-            >contato.jsbarbosa@gmail.com
-          </a>
+          <a href="mailto:contato.jsbarbosa@gmail.com">contato@gmail.com </a>
         </li>
         <li>
           <a href="tel:5511994537464">+55 (11) 9 9999-9999</a>
         </li>
-        <li>Rua principal, 255, São Paulo-SP</li>
+        <li>Rua principal, 255</li>
+        <li>São Paulo-SP</li>
       </ul>
     </section>
 
-    <footer>
+    <footer class="copy">
       <div class="footer-grid">
         <div class="footer-logo">
           <img src="assets/img/home.svg" alt="" />
@@ -308,7 +310,7 @@
           <a href="#contato">Contato</a>
         </div>
       </div>
-      <p class="copy">Algúns direitos reservados</p>
+      <p>Algúns direitos reservados</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
