@@ -1,0 +1,14 @@
+:root {
+  --bg: #faf6ed;
+  --bg-secundary: #fb5;
+  --primary-color: #222;
+  --padding-l1: 10px;
+  --grid-display: grid;
+}
+
+.cor-p1 {
+  color: var(--primary-color);
+}
+.background-c1 {
+  background-color: var(--bg);
+}

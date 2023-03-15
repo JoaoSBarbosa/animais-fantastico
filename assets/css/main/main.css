@@ -1,0 +1,15 @@
+body {
+  display: var(--grid-display);
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.grid-section{
+   grid-column: 2/4;
+   width: 100%;
+   padding: var(--padding-l1);
+   display: var(--grid-display);
+   grid-template-columns: 90px 300px 1fr;
+   gap: 20px;
+   margin-bottom: 4rem;
+}

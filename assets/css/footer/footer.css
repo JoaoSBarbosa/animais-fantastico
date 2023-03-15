@@ -1,0 +1,15 @@
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.footer-dev > div {
+  display: flex;
+  gap: 10px;
+}
+.footer-dev i {
+  font-size: 1.5rem;
+}
+.footer-links a {
+  display: block;
+}

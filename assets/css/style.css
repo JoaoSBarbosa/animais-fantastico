@@ -1,46 +1,8 @@
-*{
-   box-sizing: border-box;
-   /* padding: 0;
-   margin: 0; */
-}
-a{
-   text-decoration: none;
-}
-.menu-nav{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-.menu-nav img,
-.footer-logo img{
-   height: 52px;
-}
-.menu-ul{
-   display: flex;
-   gap: 20px;
-   list-style: none;
-}
+@import "./global/resset.css";
+@import "./header/header.css";
+@import "./footer/footer.css";
+@import "./main/main.css";
+@import "./utility/var.css";
 
-.grid-section{
-   /* display: grid;
-   grid-template-columns: repeat(2, 1fr); */
-}
-.titlle{
-   grid-column: 1/-1;
-}
 
-.footer-grid{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   align-items: center;
-}
-.footer-dev > div{
-   display: flex;
-   gap: 10px;
-}
-.footer-dev i{
-   font-size: 1.5rem;
-}
-.footer-links a{
-   display: block;
-}
+
