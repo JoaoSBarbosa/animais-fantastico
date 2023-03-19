@@ -17,3 +17,13 @@
   background-color: var(--bg-secundary);
   margin-right: var(--padding-l1);
 }
+
+@media(max-width: 700px){
+   .mapa,
+   .dados{
+      grid-column: 1/-1;
+   }
+   .mapa{
+      grid-column: 1/-1;
+   }
+}

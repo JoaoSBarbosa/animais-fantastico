@@ -35,3 +35,9 @@
    font-size: 0.875rem;
    letter-spacing: .1rem;
 }
+@media(max-width: 700px){
+   .menu{
+      grid-column: 1;
+      margin-top: 0px;
+   }
+}
