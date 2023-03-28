@@ -53,9 +53,6 @@ body {
   filter: grayscale(20%);
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
-
-  
-
 }
 .animais-lista li:hover {
   opacity: 0.9;
@@ -92,6 +89,8 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: var(--secondary-color);
+  cursor: pointer;
+  
 }
 .faq-lista dt::before {
   content: "";
@@ -105,7 +104,9 @@ body {
   font-family: var(--font2);
   margin-bottom: 0.5rem;
   margin-left: 30px;
+  
 }
+
 .js .js-tabcontent section {
   display: none;
 }
@@ -123,6 +124,36 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+
+.js .js-accordion dd{
+  display: none;
+}
+
+.js .js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+.js-accordion dt::after{
+  content: "⬎";
+  margin-left: 10px;
+}
+.js-accordion dt.ativo::after{
+  content: "⬏";
+}
+@keyframes slideDown{
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+  to{
+    opacity: 1;
+    max-height: 300px;
+  }
+}
+
+
 @media (max-width: 700px) {
   body {
     grid-template-columns: 1fr;

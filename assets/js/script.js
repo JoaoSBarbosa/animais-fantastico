@@ -25,23 +25,47 @@ logo.addEventListener("mouseover", logoHover);
 logo.addEventListener("mouseout", logoOut);
 
 // Lista de imagens
-const tabMenu = document.querySelectorAll(".js-tabmenu li");
-const tabConteudo = document.querySelectorAll(".js-tabcontent section");
 
-if (tabMenu.length && tabConteudo.length) {
+function initTabNav() {
+  const tabMenu = document.querySelectorAll(".js-tabmenu li");
+  const tabConteudo = document.querySelectorAll(".js-tabcontent section");
+  const activeClass = "ativo";
 
-  tabConteudo[0].classList.add("ativo");
-  
-  tabMenu.forEach((itemMenu, index) => {
-    itemMenu.addEventListener("click", () => {
-      activeTab(index);
+  if (tabMenu.length && tabConteudo.length) {
+    tabConteudo[0].classList.add(activeClass);
+
+    tabMenu.forEach((itemMenu, index) => {
+      itemMenu.addEventListener("click", () => {
+        activeTab(index);
+      });
     });
-  });
 
-  function activeTab(index) {
-    tabConteudo.forEach((section) => {
-      section.classList.remove("ativo");
-    });
-    tabConteudo[index].classList.add("ativo");
+    function activeTab(index) {
+      tabConteudo.forEach((section) => {
+        section.classList.remove(activeClass);
+      });
+      tabConteudo[index].classList.add(activeClass);
+    }
   }
 }
+initTabNav();
+
+// Acordion List
+
+function initAccordion() {
+  const accordionList = document.querySelectorAll(".js-accordion dt");
+  const activeClass = 'ativo';
+  if (accordionList.length) {
+    accordionList[0].nextElementSibling.classList.add(activeClass);
+    accordionList[0].classList.add(activeClass);
+
+    function activeAccordion() {
+      this.classList.toggle(activeClass);
+      this.nextElementSibling.classList.toggle(activeClass);
+    }
+    accordionList.forEach((item) => {
+      item.addEventListener("click", activeAccordion);
+    });
+  }
+}
+initAccordion();
