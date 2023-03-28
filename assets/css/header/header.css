@@ -8,16 +8,22 @@
   align-items: center;
   height: 70px;
 }
-/* .menu-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}  */
+
+.mascara {
+  border: 2px solid red;
+  clip-path: polygon();
+}
+.logo-menu {
+  height: 100%;
+}
+.logo-menu img{
+  max-height: 100%;
+}
 
 #btn-mobile {
   display: none;
 }
-.menu img,
+
 .footer-logo img {
   height: 62px;
 }
@@ -96,9 +102,8 @@
     background-color: currentColor;
     display: block;
     margin-top: 5px;
-    transition: .5s;
+    transition: 0.5s;
     position: relative;
-
   }
   #nav.ativo #hamburger {
     border-top-color: transparent;
@@ -106,7 +111,7 @@
   #nav.ativo #hamburger::before {
     transform: rotate(135deg);
   }
-   #nav.ativo #hamburger::after {
+  #nav.ativo #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
   }
