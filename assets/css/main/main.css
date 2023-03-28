@@ -106,7 +106,7 @@ body {
   margin-bottom: 0.5rem;
   margin-left: 30px;
 }
-.js-tabcontent section {
+.js .js-tabcontent section {
   display: none;
 }
 .js-tabcontent section.ativo {

@@ -4,10 +4,15 @@
 .dados {
   grid-column: 3;
 }
-
+.dados a,
+.dados p{
+  display: inline-block;
+  color: currentColor;
+}
 .dados li {
   margin-bottom: 1rem;
   font-family: var(--font2);
+ 
 }
 .dados li::before {
   content: "";
