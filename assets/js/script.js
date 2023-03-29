@@ -14,11 +14,11 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 const logo = document.querySelector(".logo-menu img");
 
 function logoHover() {
-  logo.src = "assets/img/wolf3.png";
+  logo.src = "assets/img/wolf.png";
 }
 
 function logoOut() {
-  logo.src = "assets/img/wolf.png";
+  logo.src = "assets/img/wolf3.png";
 }
 
 logo.addEventListener("mouseover", logoHover);
@@ -54,7 +54,7 @@ initTabNav();
 
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
-  const activeClass = 'ativo';
+  const activeClass = "ativo";
   if (accordionList.length) {
     accordionList[0].nextElementSibling.classList.add(activeClass);
     accordionList[0].classList.add(activeClass);
@@ -69,3 +69,21 @@ function initAccordion() {
   }
 }
 initAccordion();
+
+// Scroll suave
+
+const linksInterno = document.querySelectorAll('.js-menu a[href^="#"');
+
+function scrollToSection(e) {
+  e.preventDefault();
+  const href = e.currentTarget.getAttribute("href");
+  const section = document.querySelector(href);
+  section.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
+
+linksInterno.forEach((link) => {
+  link.addEventListener("click", scrollToSection);
+});

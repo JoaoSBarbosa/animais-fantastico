@@ -14,7 +14,7 @@
 .logo-menu {
   height: 100%;
   font-family: var(--font1);
-  font-weight: 600;
+  font-weight: 400;
 
 }
 
@@ -22,8 +22,9 @@
   max-height: 100%;
 }
 .logo-menu a{
-  color: inherit;
+  color: #666;
 }
+
 #btn-mobile {
   display: none;
 }
