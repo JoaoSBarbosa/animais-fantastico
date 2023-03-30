@@ -52,7 +52,7 @@
         </ul>
       </nav>
     </header>
-    <section class="grid-section animais" id="animais">
+    <section class="grid-section animais js-scroll" id="animais">
       <h1 class="titulo">Animais Fantástico</h1>
       <ul class="animais-lista js-tabmenu">
         <li>
@@ -261,7 +261,7 @@
       </div>
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
       <h1 class="titulo">FAQ</h1>
       <dl class="faq-lista js-accordion">
         <dt>Qual a idade dos animais</dt>
@@ -295,7 +295,7 @@
         </dd>
       </dl>
     </section>
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="assets/img/mapa.png" alt="Mapa da localização" />
@@ -315,7 +315,9 @@
         </li>
       </ul>
     </section>
-
+    <div class="scroll-btn" onclick="subirTela()">
+      <i class="fa fa-arrow-up"></i>
+    </div>
     <footer class="copy">
       <div class="footer-container">
         <div class="footer-logo">
@@ -357,7 +359,7 @@
         </div>
       </div>
 
-      <p>Wolf Blond &copy Alguns direitos reservados</p>
+      <p class="copy-p">Wolf Blond &copy Alguns direitos reservados</p>
     </footer>
 
     <script src="assets/js/script.js"></script>

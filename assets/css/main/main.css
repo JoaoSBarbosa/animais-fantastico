@@ -90,7 +90,6 @@ body {
   margin-bottom: 0.5rem;
   color: var(--secondary-color);
   cursor: pointer;
-  
 }
 .faq-lista dt::before {
   content: "";
@@ -104,7 +103,6 @@ body {
   font-family: var(--font2);
   margin-bottom: 0.5rem;
   margin-left: 30px;
-  
 }
 
 .js .js-tabcontent section {
@@ -125,34 +123,59 @@ body {
   }
 }
 
-
-.js .js-accordion dd{
+.js .js-accordion dd {
   display: none;
 }
 
 .js .js-accordion dd.ativo {
   display: block;
-  animation: slideDown .5s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
-.js-accordion dt::after{
+.js-accordion dt::after {
   content: "⬎";
   margin-left: 10px;
 }
-.js-accordion dt.ativo::after{
+.js-accordion dt.ativo::after {
   content: "⬏";
 }
-@keyframes slideDown{
-  from{
+@keyframes slideDown {
+  from {
     opacity: 0;
     max-height: 0;
   }
-  to{
+  to {
     opacity: 1;
     max-height: 300px;
   }
 }
-
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: all ease 0.3s;
+}
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin: 20px;
+  z-index: 999;
+  display: none;
+}
 
 @media (max-width: 700px) {
   body {
